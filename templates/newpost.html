@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+    <form action="/newpost" method="post">
+        <label for="title_id">
+            Title!
+            <span class="error" > {{ title_error }} </span>
+            <br>
+            <input type="text" id="title_id" name="title_title" value="{{ title }}">
+        </label>
+        <br>
+        <label for="post_id">
+            The Post:
+            <span class="error" > {{ post_error }} </span>
+            <br>
+            <textarea name="post_post" id="post_id">{{ post }}</textarea>
+        </label>
+        <br>
+        <input type="submit" value="Conjure Post!!!">
+    </form>
+
+{% endblock %}
