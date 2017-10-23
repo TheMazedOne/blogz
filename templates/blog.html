@@ -14,9 +14,9 @@
             <p>
                 {{ post.post }}
             </p>
-            written by  <a href="/blog?user={{ post.owner.id }}">{{ post.owner.username }}</a>
+            <p class="post-author">Written By <a href="/blog?user={{ post.owner.id }}">{{ post.owner.username }}</a>
             <br>
-            <p>posted on {{post.date_posted }}</p>
+            <p>Posted on {{post.date_posted }}</p>
             
         {% endfor %}
         

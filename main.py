@@ -161,7 +161,7 @@ def newpost():
 def valid( item ):
     message = ''
     if len(item)<3 or len(item)>20 or ' ' in item:
-        message = "This must be between 3-20 characters and have no spaces."
+        message = "Must be between 3-20 characters and no spaces."
     return message
 
 @app.route('/logout')
