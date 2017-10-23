@@ -15,7 +15,8 @@
                 {{ post.post }}
             </p>
             written by  <a href="/blog?user={{ post.owner.id }}">{{ post.owner.username }}</a>
-            <hr>
+            <br>
+            <p>posted on {{post.date_posted }}</p>
             
         {% endfor %}
         
